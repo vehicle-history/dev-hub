@@ -933,7 +933,6 @@ del {
   padding-bottom: .5em;
   cursor: pointer;
   color: #0072CE;
-  position: relative;
 }
 
 .expandable-content {
@@ -974,5 +973,5 @@ del {
 
 /* custom class as .hidden is already used in the guide */
 .expandable-hidden {
-  display: block;
+  display: none;
 }

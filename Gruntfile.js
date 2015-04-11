@@ -6,7 +6,6 @@ module.exports = function (grunt) {
         files: [
           {
             expand: true,
-//            cwd: "_components/bootstrap/dist/css",
             cwd: "_components/bootstrap/docs/assets/css",
             src: "*.*",
             dest: "vendor/css/"
@@ -32,26 +31,45 @@ module.exports = function (grunt) {
             dest: "vendor/css/"
           }
         ]
+      },
+      fonts: {
+        files: [
+          {
+            expand: true,
+            cwd: "static/fonts",
+            src: "*.*",
+            dest: "vendor/fonts/"
+          }
+        ]
       }
     },
     uglify: {
-      js: {
+      main: {
         files: {
-          'vendor/js/all.min.js': [
+          'vendor/js/main.min.js': [
             '_components/jquery/jquery.js',
-            'static/js/shred.bundle.js',
-            'static/js/jquery.slideto.min.js',
-            'static/js/jquery.wiggle.min.js',
-            'static/js/jquery.ba-bbq.min.js',
-            'static/js/handlebars-1.0.rc.1.js',
             '_components/underscore/underscore-min.js',
             'static/js/backbone-min.js',
-            'static/js/swagger.js',
-            'static/js/swagger-ui.js',
             'static/js/highlight.7.3.pack.js',
             'static/js/mustache.js',
             'static/js/injector.js',
             'static/js/utilities.js'
+          ]
+        }
+      },
+      docs: {
+        files: {
+          'vendor/js/docs.min.js': [
+            'static/js/jquery-1.8.0.min.js',
+            'static/js/jquery.slideto.min.js',
+            'static/js/jquery.wiggle.min.js',
+            'static/js/jquery.ba-bbq.min.js',
+            'static/js/handlebars-2.0.0.js',
+            'static/js/underscore-min.js',
+            'static/js/backbone-min.js',
+            'static/js/swagger-ui.js',
+            'static/js/highlight.7.3.pack.js',
+            'static/js/marked.js'
           ]
         }
       }
