@@ -1,13 +1,12 @@
 ---
 layout: default
-title: Dev Hub
+title: Developer portal
 overview: true
 ---
 
 <div class="hero-unit">
-    <h2>Dev Hub</h2>
-    <p>This is a prototype repository of APIs and data. These APIs, data, tools and resourecs are intended to provide developers with what they need to develop web and mobile applications, design data visualizations and stories using public resources.</p>
-    <p align="center"><span style="color:#FF0000; font-size:18px; font-weight: bold:"><strong>This is not an official website, the goal is to show what is possible!</strong></span></p>
+    <h2>Developer portal</h2>
+    <p>We built the API to be as self-documenting as possible, but if you find yourself overwhelmed, we organized this site into four major areas.</p>
     <p><a href="getting-started.html" class="btn btn-primary btn-large">Getting Started &raquo;</a></p>
 </div>
 <div class="row-fluid">
@@ -42,36 +41,7 @@ overview: true
         <br />
         <p><a class="btn" href="#">View APIs &raquo;</a></p>
     </div><!--/span-->
-    <div class="span4">
-        
-        {% raw  %}
-        <script id="dataListingTemplate" type="text/template">       
-            <li><a href="data.html?#{{title}}"><strong>{{title}}</strong></a></li>                                                                                               
-        </script>
-        {% endraw %}        
-        
-        <script type="text/javascript">
-        function listData()
-            {
-            $.getJSON('data.json', function(data) {
-                toggle = 0;
-                 $.each(data, function(key, val) {
-                    var template = $('#dataListingTemplate').html();
-                    var html = Mustache.to_html(template, val);
-                    $('#dataListing').append(html);                          
-                    });
-                });
-            } 
-        listData();
-        </script>          
-        
-        <h2>Data</h2>
-        <div style="height: 150px; overflow: auto;">
-            <ul id="dataListing"></ul>        
-        </div>
-        <br />
-        <p><a class="btn" href="data.html">View Data &raquo;</a></p>
-    </div><!--/span-->
+
     <div class="span3">
         
         {% raw  %}

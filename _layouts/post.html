@@ -1,39 +1,71 @@
-{% include top.html %}
+---
+nav: blog
+---
 
-<body class="wrap">
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <title>vehicle-history API documentation</title>
+  <link rel="stylesheet" href="{{ base.url }}/static/css/normalize.css">
+  <link rel="stylesheet" href="{{ base.url }}/static/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!--[if IE]>
+  <link rel="stylesheet" href="static/css/for-ie-only.css">
+  <![endif]-->
+</head>
+<body id="{{ page.nav  }}">
+
+  <header class="header cf" role="banner">
+      {% include header.html %}
+  </header>
+
+  <div class="wrap">
+    <div class="content">
     
-  {% include header.html %}
+    {% if paginator.total_pages > 1 %}
+    <p>more than one page</p>
+    {% else %}
+    <p>Less than one page</p>
+    {% endif %}
+    
+    
+    <aside>
+    {% include nav.html %}
+    </aside>
+	<section>
+	{% for post in paginator.posts %}
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <p class="author">
+    <span class="date">{{ post.date }}</span>
+  </p>
+  <div class="content">
+    {{ post.content }}
+  </div>
+	{% endfor %}
+	</section>
+    <section class="main-content" role="main">
+      {{ content }}
+    </section>
+    
 
-  <section>  
-      
-      <div class="container">
-        
-          {{ content }}
-        
-            <div class="row" align="center" style="padding-top: 10px; padding-botto: 10px;">
-                <div class="pagination">
-                  <ul>
-                  {% if page.previous %}
-                    <li class="prev"><a href="{{BASE_PATH}}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
-                  {% else %}
-                    <li class="prev disabled"><a>&larr; Previous</a></li>
-                  {% endif %}
-                    <li><a href="{{BASE_PATH}}blog/">Return to Main Blog Page</a></li>
-                  {% if page.next %}
-                    <li class="next"><a href="{{BASE_PATH}}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
-                  {% else %}
-                    <li class="next disabled"><a>Next &rarr;</a>
-                  {% endif %}
-                  </ul>
-                </div>
-            </div>
-                
-        </div>
-        
-  </section>  
 
-  {% include footer.html %}
-  {% include analytics.html %}
 
+
+    </div>
+  </div> <!--wrap-->
+
+    <footer class="footer cf" role="contentinfo">
+      <div class="wrap">
+        {% include footer.html %}
+      </div>
+    </footer>
+  <script type="text/javascript" src="{{ base.url }}/static/js/docs.min.js"></script>
+  <script type="text/javascript" src="{{ base.url }}/static/js/expandables.js"></script>
 </body>
 </html>

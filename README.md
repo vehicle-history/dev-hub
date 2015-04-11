@@ -1,8 +1,15 @@
-API Evangelist Dev-Hub
-=======
+vehicle-history developer portal
+====================
 
-This is a template developer hub to show what is possible when you launch an API and data portal using Github Pages.
+## Using JavaScript and Bower
 
-License: Apache 2.0 - http://kinlane.github.io/dev-hub/license
+* Run `npm install -g bower` to install Bower.
+* Run `npm install -g grunt-cli` to install Grunt.
+* Run `npm install` in the directory to install other tools.
+* Run `bower install` to install dependencies.
 
-Contact: @kinlane
+After changing the JavaScript, run `grunt` to rebuild the minified JS.
+
+```
+bundle exec jekyll serve
+```
