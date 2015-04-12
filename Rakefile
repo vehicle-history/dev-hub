@@ -1,14 +1,22 @@
-namespace :pygments do
+require "rubygems"
 
-  desc 'Delete pygments CSS files'
-  task :clean do
-    system "rm -f static/_sass/pygments.scss"
+desc "Deploy to Github Pages"
+task :deploy do
+  puts "## Deploying to Github Pages"
+
+  puts "## Generating site"
+  system "grunt build"
+
+  cd "_site" do
+    system "git add -A"
+
+    message = "Site updated at #{Time.now.utc}"
+    puts "## Commiting: #{message}"
+    system "git commit -m \"#{message}\""
+
+    puts "## Pushing generated site"
+    system "git push"
+
+    puts "## Deploy Complete!"
   end
-
-  desc 'Generate pygments CSS'
-  task :compile => [:clean] do
-    system "mkdir -p static/_sass"
-    system "pygmentize -a .highlight -S fruity -f html > static/_sass/pygments.scss"
-  end
-
 end

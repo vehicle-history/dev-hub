@@ -8,12 +8,24 @@ highlighter: pygments
 safe: true
 baseurl: /developers
 exclude:
+  - "static"
+  - "build.sh"
+  - "Dockerfile"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "Grunt.js"
+  - "nginx.conf"
   - ".ruby-version"
   - "node_modules"
   - "package.json"
   - "bower.json"
   - "bower_components"
   - "bower.json"
+  - "Rakefile"
+  - "*.ipr"
+  - "*.iml"
+  - "*.iws"
+
   
 sass:
   sass_dir: static/_sass

@@ -12,13 +12,23 @@ module.exports = function (grunt) {
           }
         ]
       },
-      images: {
+      img: {
         files: [
           {
             expand: true,
             cwd: "static/img",
             src: "*.*",
             dest: "vendor/img/"
+          }
+        ]
+      },
+      images: {
+        files: [
+          {
+            expand: true,
+            cwd: "static/images",
+            src: "*.*",
+            dest: "vendor/images/"
           }
         ]
       },
@@ -94,4 +104,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('default', ['copy', 'uglify', 'exec:serve']);
+  grunt.registerTask('build', ['copy', 'uglify', 'exec:build']);
 };
