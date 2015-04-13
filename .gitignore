@@ -5,15 +5,8 @@ _site
 _components
 node_modules
 vendor
-_data
-_includes
-_layouts
-_posts
+static
 api
-api-docs
-blog
-console
 css
 img
 js
-json

@@ -1,75 +1,82 @@
 ---
 layout: default
-title: Developer portal
+title: Developers portal
 overview: true
 ---
 
 <div class="hero-unit">
-    <h2>Developer portal</h2>
-    <p>We built the API to be as self-documenting as possible, but if you find yourself overwhelmed, we organized this site into four major areas.</p>
+    <h2>Developers portal</h2>
+
+    <p>We built the API to be as self-documenting as possible, but if you find yourself overwhelmed, we organized this
+        site into four major areas.</p>
+
     <p><a href="getting-started.html" class="btn btn-primary btn-large">Getting Started &raquo;</a></p>
 </div>
 <div class="row-fluid">
     <div class="span1">&nbsp;</div>
     <div class="span4">
-        
-        {% raw  %}
-        <script id="apiListingTemplate" type="text/template">       
-            <li><a href="api.html?#{{name}}"><strong>{{name}}</strong></a></li>                                                                                               
+
+        {% raw %}
+        <script id="apiListingTemplate" type="text/template">
+            <li><a href="api.html?#{{hashUrl}}"><strong>{{name}}</strong></a></li>
         </script>
-        {% endraw %}        
-        
+        {% endraw %}
+
         <script type="text/javascript">
-        function listAPIs()
-            {
-            $.getJSON('api.json', function(data) {
-                toggle = 0;
-                 $.each(data['apis'], function(key, val) {
-                    var template = $('#apiListingTemplate').html();
-                    var html = Mustache.to_html(template, val);
-                    $('#apiListing').append(html);                          
+            function listAPIs() {
+                $.getJSON('api.json', function (data) {
+                    toggle = 0;
+                    $.each(data['apis'], function (key, val) {
+                        var template = $('#apiListingTemplate').html();
+                        var html = Mustache.to_html(template, val);
+                        $('#apiListing').append(html);
                     });
                 });
-            } 
-        listAPIs();
-        </script>      
+            }
+            listAPIs();
+        </script>
 
         <h2>APIs</h2>
+
         <div style="height: 150px; overflow: auto;">
             <ul id="apiListing"></ul>
         </div>
-        <br />
-        <p><a class="btn" href="#">View APIs &raquo;</a></p>
-    </div><!--/span-->
+        <br/>
+
+        <p><a class="btn" href="api.html">View APIs &raquo;</a></p>
+    </div>
+    <!--/span-->
 
     <div class="span3">
-        
-        {% raw  %}
-        <script id="codeListingTemplate" type="text/template">       
-            <li><a href="code.html?#{{Name}}"><strong>{{Name}}</strong></a></li>                                                                                               
+
+        {% raw %}
+        <script id="codeListingTemplate" type="text/template">
+            <li><a href="code.html?#{{Name}}"><strong>{{Name}}</strong></a></li>
         </script>
-        {% endraw %}        
-        
+        {% endraw %}
+
         <script type="text/javascript">
-        function listCode()
-            {
-            $.getJSON('json/code.json', function(data) {
-                toggle = 0;
-                 $.each(data['Code'], function(key, val) {
-                    var template = $('#codeListingTemplate').html();
-                    var html = Mustache.to_html(template, val);
-                    $('#codeListing').append(html);                          
+            function listCode() {
+                $.getJSON('json/code.json', function (data) {
+                    toggle = 0;
+                    $.each(data['Code'], function (key, val) {
+                        var template = $('#codeListingTemplate').html();
+                        var html = Mustache.to_html(template, val);
+                        $('#codeListing').append(html);
                     });
                 });
-            } 
-        listCode();
-        </script>          
-        
+            }
+            listCode();
+        </script>
+
         <h2>Code</h2>
+
         <div style="height: 150px; overflow: auto;">
-        <ul id="codeListing"> </ul>         
+            <ul id="codeListing"></ul>
         </div>
-        <br />
+        <br/>
+
         <p><a class="btn" href="code.html">View Code &raquo;</a></p>
-    </div><!--/span-->
+    </div>
+    <!--/span-->
 </div><!--/row-->

@@ -1,50 +1,47 @@
 {
-  "name": "Dev Hub",
-  "description": "This is a prototype repository of APIs and data. These APIs, data, tools and resourecs are intended to provide developers with what they need to develop web and mobile applications, design data visualizations and stories using public resources.",
+  "name": "Developers portal",
+  "description": "",
   "image": "https://s3.amazonaws.com/kinlane-productions/public-private-sector/black-puzzle-500.png",
-  "url": "http://kinlane.github.io/dev-hub/",
+  "url": "https://github.com/vehicle-history/developers-portal/blob/gh-pages-vh/",
   "apis": [
     {
-      "name": "Facilities",
-      "description": "Demo API resource of all facilities.",
+      "name": "Vehicle history",
+      "hashUrl": "!/vehicle-history/getVehicleHistory",
+      "description": "Vehicle history API",
       "image": "https://s3.amazonaws.com/kinlane-productions/public-private-sector/black-puzzle-500.png",
-      "human-url": "http://kinlane.github.io/dev-hub/api.html",
-      "machine-url": "http://kinlane.github.io/dev-hub/json/facilities",
+      "human-url": "https://github.com/vehicle-history/developers-portal/blob/gh-pages-vh/api.html",
+      "machine-url": "https://github.com/vehicle-history/developers-portal/blob/gh-pages-vh/api-docs/swagger.json",
       "tags": "facilities, government",
       "urls": [
         {
           "type": "code",
-          "url": "http://kinlane.github.io/dev-hub/code.html"
+          "url": "https://github.com/vehicle-history/developers-portal/blob/gh-pages-vh/code.html"
         },
         {
           "type": "swagger",
-          "url": "http://kinlane.github.io/dev-hub/json/facilities"
-        },
-        {
-          "type": "gallery",
-          "url": "http://kinlane.github.io/dev-hub/gallery.html"
+          "url": "https://github.com/vehicle-history/developers-portal/blob/gh-pages-vh/api-docs/swagger.json"
         },
         {
           "type": "support",
-          "url": "http://kinlane.github.io/dev-hub/support.html"
+          "url": "https://github.com/vehicle-history/developers-portal/blob/gh-pages-vh/support.html"
         },
         {
           "type": "roadmap",
-          "url": "http://kinlane.github.io/dev-hub/roadmap.html"
+          "url": "https://github.com/vehicle-history/developers-portal/blob/gh-pages-vh/roadmap.html"
         },
         {
           "type": "blog",
-          "url": "http://kinlane.github.io/dev-hub/blog.html"
+          "url": "https://github.com/vehicle-history/developers-portal/blob/gh-pages-vh/blog.html"
         }
       ],
       "contact": [
         {
           "type": "email",
-          "url": "info@apievangelist.com"
+          "url": "contact@vehicle-history.io"
         },
         {
           "type": "twitter",
-          "url": "https://twitter.com/kinlane/"
+          "url": "https://twitter.com/vehiclehistory_/"
         }
       ],
       "meta": [
@@ -57,138 +54,23 @@
           "url": "Free"
         }
       ]
-    },
-    {
-      "name": "Programs",
-      "description": "Demo API resource of all government programs.",
-      "image": "https://s3.amazonaws.com/kinlane-productions/public-private-sector/black-puzzle-500.png",
-      "human-url": "http://kinlane.github.io/dev-hub/api.html",
-      "machine-url": "http://kinlane.github.io/dev-hub/json/programs",
-      "tags": "programs, government",
-      "urls": [
-        {
-          "type": "code",
-          "url": "http://kinlane.github.io/dev-hub/code.html"
-        },
-        {
-          "type": "swagger",
-          "url": "http://kinlane.github.io/dev-hub/json/facilities"
-        },
-        {
-          "type": "gallery",
-          "url": "http://kinlane.github.io/dev-hub/gallery.html"
-        },
-        {
-          "type": "support",
-          "url": "http://kinlane.github.io/dev-hub/support.html"
-        },
-        {
-          "type": "roadmap",
-          "url": "http://kinlane.github.io/dev-hub/roadmap.html"
-        },
-        {
-          "type": "blog",
-          "url": "http://kinlane.github.io/dev-hub/blog.html"
-        }
-      ],
-      "contact": [
-        {
-          "type": "email",
-          "url": "info@apievangelist.com"
-        },
-        {
-          "type": "twitter",
-          "url": "https://twitter.com/kinlane/"
-        }
-      ],
-      "meta": [
-        {
-          "key": "interface-license",
-          "vallue": "CC BY 3.0"
-        },
-        {
-          "type": "pricing",
-          "url": "Free"
-        }
-      ]
-    },
-    {
-      "name": "Press",
-      "description": "Demo API resource of all government press releases.",
-      "image": "https://s3.amazonaws.com/kinlane-productions/public-private-sector/black-puzzle-500.png",
-      "human-url": "http://kinlane.github.io/dev-hub/api.html",
-      "machine-url": "http://kinlane.github.io/dev-hub/json/press",
-      "tags": "press, news, government",
-      "urls": [
-        {
-          "type": "code",
-          "url": "http://kinlane.github.io/dev-hub/code.html"
-        },
-        {
-          "type": "swagger",
-          "url": "http://kinlane.github.io/dev-hub/json/facilities"
-        },
-        {
-          "type": "gallery",
-          "url": "http://kinlane.github.io/dev-hub/gallery.html"
-        },
-        {
-          "type": "support",
-          "url": "http://kinlane.github.io/dev-hub/support.html"
-        },
-        {
-          "type": "roadmap",
-          "url": "http://kinlane.github.io/dev-hub/roadmap.html"
-        },
-        {
-          "type": "blog",
-          "url": "http://kinlane.github.io/dev-hub/blog.html"
-        }
-      ],
-      "contact": [
-        {
-          "type": "email",
-          "url": "info@apievangelist.com"
-        },
-        {
-          "type": "twitter",
-          "url": "https://twitter.com/kinlane/"
-        }
-      ],
-      "meta": [
-        {
-          "key": "interface-license",
-          "vallue": "CC BY 3.0"
-        },
-        {
-          "type": "pricing",
-          "url": "Free"
-        }
-      ]
-    }    
+    }
   ],
   "include": [
-    {
-      "name": "API Evangelist",
-      "url": "http://apievangelist.com/api.json"
-    },
-    {
-      "type": "API Commons",
-      "url": "http://apicommons.org/api.json"
-    }
+
   ],
   "maintainer": [
     {
       "type": "Name",
-      "url": "Kin Lane"
+      "url": "Zenedith"
     },
     {
       "type": "email",
-      "url": "info@apievangelist.com"
+      "url": "contact@vehicle-history.io"
     },
     {
       "type": "twitter",
-      "url": "https://twitter.com/kinlane/"
+      "url": "https://twitter.com/vehiclehistory_/"
     }
   ],
   "tags": "government, API, Application Programming Interface, developer, facilities, programs, press",

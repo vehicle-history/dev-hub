@@ -1,27 +1,6 @@
 {
     "Code": [
         {
-            "Code_ID": "1",
-            "Name": "PHP Libraries",
-            "Language": "PHP",
-            "Description": "This is a simple PHP library that will work across the APIs.",
-            "Gist": "https://gist.github.com/kinlane/6413614.js"
-        },
-        {
-            "Code_ID": "2",
-            "Name": "Python Libraries",
-            "Language": "Python",
-            "Description": "This is a simple Python library that will work across the APIs.",
-            "Gist": "https://gist.github.com/kinlane/6413686.js"
-        },
-        {
-            "Code_ID": "3",
-            "Name": "Ruby Libraries",
-            "Language": "Ruby",
-            "Description": "This is a simple Ruby library that will work across the APIs.",
-            "Gist": "https://gist.github.com/kinlane/6413711.js"
-        },
-        {
             "Code_ID": "4",
             "Name": "JavaScript Libraries",
             "Language": "JavaScript",

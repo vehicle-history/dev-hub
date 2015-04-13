@@ -1,4 +1,4 @@
-name: Developer Hub
+name: Developers portal
 markdown: redcarpet
 
 redcarpet:
@@ -19,7 +19,7 @@ exclude:
   - "node_modules"
   - "package.json"
   - "bower.json"
-  - "bower_components"
+  - "_components"
   - "bower.json"
   - "Rakefile"
   - "*.ipr"
@@ -29,6 +29,8 @@ exclude:
   
 sass:
   sass_dir: static/_sass
+
+permalink: /:year/:month/:day/:title
 
 # Blog/Post configuration
 paginate: 5

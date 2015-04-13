@@ -13,12 +13,12 @@
         {
             "Name": "Setting up the Github Repository",
             "Date": "9/01/2013",
-            "Description": "I setup a Github repository that is being used to host this entire developer portal."
+            "Description": "I setup a Github repository that is being used to host this entire developers portal."
         },
         {
             "Name": "Created Github Page for Repository",
             "Date": "9/01/2013",
-            "Description": "Using the Github repository I configured a Github Page to be the public face of this developer area."
+            "Description": "Using the Github repository I configured a Github Page to be the public face of this developers area."
         },
         {
             "Name": "Downloaded and Published Default Jekyll Site",
