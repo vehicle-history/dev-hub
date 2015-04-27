@@ -13,7 +13,7 @@ exclude:
   - "Dockerfile"
   - "Gemfile"
   - "Gemfile.lock"
-  - "Grunt.js"
+  - "Gruntfile.js"
   - "nginx.conf"
   - ".ruby-version"
   - "node_modules"

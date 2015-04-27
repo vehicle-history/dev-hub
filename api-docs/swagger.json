@@ -10,16 +10,24 @@
       "description": "Operation about vehicle histories"
     }
   ],
-  "schemes": ["https"],
+  "schemes": [
+    "https"
+  ],
   "paths": {
     "/vehicle-history": {
       "get": {
-        "tags": ["vehicle-history"],
+        "tags": [
+          "vehicle-history"
+        ],
         "summary": "Find vehicle history",
         "description": "Returns a vehicle data and vehicle history",
         "operationId": "getVehicleHistory",
-        "consumes": ["application/json"],
-        "produces": ["application/vnd.vehicle-history.v1+json"],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/vnd.vehicle-history.v1+json"
+        ],
         "authorizations": {},
         "parameters": [
           {
@@ -33,7 +41,7 @@
           },
           {
             "name": "vin",
-            "description": "Vehicle vin integer",
+            "description": "Vehicle vin number",
             "required": false,
             "type": "string",
             "defaultValue": "ABC123456789DEF",
@@ -75,10 +83,8 @@
         },
         "security": [
           {
-            "auth": [
-            ],
-            "bearerToken": [
-            ]
+            "auth": [],
+            "bearerToken": []
           }
         ]
       }
@@ -89,8 +95,7 @@
       "type": "oauth2",
       "authorizationUrl": "https://vehicle-history.io/oauth/token",
       "flow": "password",
-      "scopes": {
-      }
+      "scopes": {}
     },
     "bearerToken": {
       "type": "apiKey",
@@ -140,6 +145,7 @@
             "ALTRAD",
             "ALFA_ROMEO",
             "APRILIA",
+            "ASTON_MARTIN",
             "BENTLEY",
             "BENZHOU",
             "BRENDERUP",
@@ -174,12 +180,15 @@
             "FS_LUBLIN",
             "FUXIANDA",
             "FORD",
+            "GILERA",
             "GMC",
             "GNIOTPOL",
             "HAOTIAN",
             "HAILI",
             "HARLEY_DAVIDSON",
+            "HOBBY",
             "HONDA",
+            "HUSQVARNA",
             "HUONIAO",
             "HUEFFERMANN",
             "HURRICANE",
@@ -191,6 +200,7 @@
             "ISUZU",
             "JAGUAR",
             "JAWA",
+            "JELCZ",
             "JEEP",
             "JINCHENG",
             "JUNAK",
@@ -246,6 +256,7 @@
             "ROLLS_ROYCE",
             "SAM",
             "SANOK",
+            "SANYANG",
             "SIAMOTO",
             "SIMSON",
             "SEAT",
@@ -260,12 +271,14 @@
             "SPRITE_SPORT",
             "SSANGYONG",
             "STAR",
+            "STOPEXIM",
             "SLUPSK",
             "SAAB",
             "SUBARU",
             "SMART",
             "SOMMER",
             "SWIDNIK_TRADE",
+            "SYLAND",
             "TATA",
             "TASSO",
             "TOROS",
@@ -283,12 +296,16 @@
             "WANGYE",
             "WAZ",
             "WESTFALIA",
+            "WIELTON",
             "WIOLA",
             "WLADIMIREC",
+            "WNP_SUSKI",
+            "WONJAN",
             "WSK",
             "YINMU",
             "YINXIANG",
             "YIBEN",
+            "YIYING",
             "YAMASAKI",
             "ZASLAW",
             "ZIPP",
@@ -401,6 +418,7 @@
             "OTHER",
             "LOADER",
             "CISTERN",
+            "PLATFORM",
             "OTHER_NOT_CAMPING",
             "CITY",
             "INTERCITY",
