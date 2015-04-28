@@ -70,7 +70,6 @@ module.exports = function (grunt) {
       docs: {
         files: {
           'vendor/js/docs.min.js': [
-            'static/js/jquery-1.8.0.min.js',
             'static/js/jquery.slideto.min.js',
             'static/js/jquery.wiggle.min.js',
             'static/js/jquery.ba-bbq.min.js',

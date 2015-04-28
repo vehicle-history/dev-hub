@@ -13,3 +13,7 @@ After changing the JavaScript, run `grunt` to rebuild the minified JS.
 ```
 bundle exec jekyll serve
 ```
+
+```
+rake deploy
+```
